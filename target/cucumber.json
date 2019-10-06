@@ -1,0 +1,111 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11860183200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeLogin()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login into Application",
+        "description": "",
+        "id": "application-login;login-into-application",
+        "after": [
+          {
+            "result": {
+              "duration": 3808950700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterLogin()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1729147600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Landing Page",
+            "match": {
+              "location": "StepDefinitions.user_is_on_Landing_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1204875500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters username as \"kailashkadam6988@gmail.com\" and password as \"Kailash$2710\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kailashkadam6988@gmail.com",
+                  "offset": 25
+                },
+                {
+                  "val": "Kailash$2710",
+                  "offset": 70
+                }
+              ],
+              "location": "StepDefinitions.user_enters_username_as_and_password_as(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3788727100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Welcome page with name \"Kailash\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kailash",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.welcome_page_with_name(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "EmailId is \"kailashkadam6988@gmail.com\" in profile details section",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
